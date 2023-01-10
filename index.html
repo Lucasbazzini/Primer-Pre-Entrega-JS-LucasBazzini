@@ -10,21 +10,6 @@
 </head>
 <body style="background-color: rgb(55, 55, 55);">
 
-    <header>
-        <nav class="navbar header">
-            <div class="container">
-              <span class="navbar-text tittle">
-                Flayeer
-              </span>
-              <!--<form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn botonSearch" type="submit">Search</button>
-              </form>-->
-            </div>
-            
-          </nav>
-          
-    </header>
 
     
     <main>
@@ -36,18 +21,19 @@
             <input type="number" id="pasajeros" required >
             <h2>Ahorros (en dolares)</h2>
             <input type="number"   id="ahorros" required>
-            <h2>Gastos comida (en dolares)</h2>
+            <h2>Gastos comida por persona (en dolares)</h2>
             <input type="number"  id="comida" required>
-            <h2>Gastos hoteleria (en dolares)</h2>
+            <h2>Gastos hoteleria por persona (en dolares)</h2>
             <input type="number"   id="hoteleria" required>
-            <h2>Gastos transporte (en dolares)</h2>
+            <h2>Gastos transporte por persona (en dolares)</h2>
             <input type="number"   id="transporte" required>
             <button type="button" id="boton" onclick="restar()">Calcular viaje</button>
             <h2>En dolares estadounidenses te quedarian :</h2>
-            
-            <input  type="number" disabled oninput="dinero()" id="total">
+            <input  type="number" disabled  id="total">
+            <h2>En pesos argentinos te quedarian:</h2>
+            <input type="number" disabled id="total-pesos">
+
           </form>
-          
         </div>
       </div>
     </main>
